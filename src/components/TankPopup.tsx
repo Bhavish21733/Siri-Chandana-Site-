@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import { X } from "lucide-react";
 
 export function TankPopup() {
@@ -32,6 +32,21 @@ export function TankPopup() {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [hasTriggered]);
+
+  
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name") as string;
+    const phone = formData.get("phone") as string;
+    const service = formData.get("service") as string;
+
+    const message = `Hi Siri Chandana, I would like to request a quote.\n\n*Name:* ${name}\n*Phone:* ${phone}\n*Service Required:* ${service}`;
+    const encodedMessage = encodeURIComponent(message);
+    
+    window.open(`https://wa.me/919133432885?text=${encodedMessage}`, "_blank");
+    handleClose();
+  };
 
   const handleClose = () => {
     setIsOpen(false);
@@ -77,8 +92,8 @@ export function TankPopup() {
               <h3 className="text-2xl font-extrabold leading-tight">Book Your Tank Cleaning</h3>
             </div>
             
-            <form className="space-y-4" name="tank-popup-form" method="POST" >
-              <input type="hidden" name="form-name" value="tank-popup-form" />
+            <form className="space-y-4" name="tank-popup-form" onSubmit={handleSubmit}>
+              
               
               <div>
                 <input 

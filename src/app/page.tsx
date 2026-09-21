@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2, Phone, ShieldCheck, Clock, MapPin, Building2, Home as HomeIcon, Factory, ChevronDown } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
 import { services } from "@/data/services";
+import { HeroForm } from "@/components/HeroForm";
 import { faqs } from "@/data/faqs";
 import TestimonialCarousel from "@/components/ui/TestimonialCarousel";
 
@@ -57,37 +58,7 @@ export default function HomePage() {
                     <p className="text-gray-500 mt-2 text-base md:text-lg">Get an instant quote for your tank</p>
                   </div>
                   
-                  <form 
-                    name="hero-quote" 
-                    method="POST" 
-                     
-                    netlify-honeypot="bot-field"
-                    action="/contact?success=true"
-                    className="space-y-4"
-                  >
-                    <input type="hidden" name="form-name" value="hero-quote" />
-                    <p className="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
-
-                    <div>
-                      <input type="text" name="name" required placeholder="Your Name" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua text-gray-900 bg-white shadow-sm" />
-                    </div>
-                    <div>
-                      <input type="tel" name="phone" required placeholder="Mobile Number" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua text-gray-900 bg-white shadow-sm" />
-                    </div>
-                    <div>
-                      <select name="service" required className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua text-gray-700 bg-white shadow-sm appearance-none">
-                        <option value="">Select a service...</option>
-                        <option value="Residential">Residential Tank</option>
-                        <option value="Commercial">Commercial Tank</option>
-                        <option value="Sintex">Sintex Tank</option>
-                        <option value="Underground">Underground Sump</option>
-                        <option value="Other">Other / Not Sure</option>
-                      </select>
-                    </div>
-                    <button type="submit" className="w-full bg-brand-aqua text-white font-bold text-lg py-4 rounded-md hover:bg-[#0284c7] transition-all mt-2 shadow-md hover:shadow-lg active:scale-[0.98]">
-                      Get Free Quote
-                    </button>
-                  </form>
+                  <HeroForm />
                 </div>
               </div>
             </div>

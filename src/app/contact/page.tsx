@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Phone, MapPin } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { ContactForm } from "@/components/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact Us | Siri Chandana Water Tank Cleaning",
@@ -111,53 +112,7 @@ export default function ContactPage() {
             <div className="w-full lg:w-7/12">
               <div className="bg-gray-50 rounded-2xl p-8 lg:p-10 border border-gray-100 shadow-sm">
                 <h3 className="text-2xl font-bold text-brand-navy mb-6">Request a Free Quote</h3>
-                <form 
-                  name="contact" 
-                  method="POST" 
-                   
-                  netlify-honeypot="bot-field"
-                  action="/contact?success=true"
-                  className="space-y-6"
-                >
-                  <input type="hidden" name="form-name" value="contact" />
-                  <p className="hidden">
-                    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
-                  </p>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="space-y-2">
-                      <label htmlFor="name" className="text-sm font-semibold text-gray-900 block">Your Name</label>
-                      <input type="text" id="name" name="name" required placeholder="Enter your name" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua focus:border-transparent transition-shadow bg-white" />
-                    </div>
-                    <div className="space-y-2">
-                      <label htmlFor="phone" className="text-sm font-semibold text-gray-900 block">Phone Number</label>
-                      <input type="tel" id="phone" name="phone" required placeholder="Enter your mobile number" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua focus:border-transparent transition-shadow bg-white" />
-                    </div>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="service" className="text-sm font-semibold text-gray-900 block">Service Required</label>
-                    <select id="service" name="service" required className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua focus:border-transparent transition-shadow bg-white appearance-none text-gray-700">
-                      <option value="">Select a service...</option>
-                      <option value="Residential Water Tank Cleaning">Residential Water Tank Cleaning</option>
-                      <option value="Commercial Water Tank Cleaning">Commercial Water Tank Cleaning</option>
-                      <option value="Overhead Tank Cleaning">Overhead Tank Cleaning</option>
-                      <option value="Underground Tank Cleaning">Underground Tank Cleaning</option>
-                      <option value="Industrial Tank Cleaning">Industrial Tank Cleaning</option>
-                      <option value="Sump & Sintex Tank Cleaning">Sump & Sintex Tank Cleaning</option>
-                    </select>
-                  </div>
-
-                  <div className="space-y-2">
-                    <label htmlFor="message" className="text-sm font-semibold text-gray-900 block">Message (Optional)</label>
-                    <textarea id="message" name="message" rows={4} placeholder="Tell us about your tank cleaning requirement" className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua focus:border-transparent transition-shadow bg-white resize-y"></textarea>
-                  </div>
-
-                  <button type="submit" className="w-full bg-brand-navy text-white font-bold text-lg py-4 rounded-md hover:bg-gray-800 transition-colors shadow-md hover:shadow-lg">
-                    Submit Enquiry
-                  </button>
-                  <p className="text-xs text-gray-500 text-center mt-4">We respect your privacy. No spam, ever.</p>
-                </form>
+                <ContactForm />
               </div>
             </div>
 
