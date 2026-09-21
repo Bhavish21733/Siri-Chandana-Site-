@@ -60,7 +60,7 @@ export default function HomePage() {
                   <form 
                     name="hero-quote" 
                     method="POST" 
-                    data-netlify="true" 
+                     
                     netlify-honeypot="bot-field"
                     action="/contact?success=true"
                     className="space-y-4"

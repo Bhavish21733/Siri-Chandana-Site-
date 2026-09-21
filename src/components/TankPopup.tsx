@@ -77,7 +77,7 @@ export function TankPopup() {
               <h3 className="text-2xl font-extrabold leading-tight">Book Your Tank Cleaning</h3>
             </div>
             
-            <form className="space-y-4" name="tank-popup-form" method="POST" data-netlify="true">
+            <form className="space-y-4" name="tank-popup-form" method="POST" >
               <input type="hidden" name="form-name" value="tank-popup-form" />
               
               <div>
