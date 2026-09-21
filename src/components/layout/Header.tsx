@@ -37,12 +37,12 @@ export function Header() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-2" : "bg-white/95 backdrop-blur-sm py-3"
+        isScrolled ? "bg-white shadow-md py-1" : "bg-white/95 backdrop-blur-sm py-1"
       }`}
     >
       <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 mx-auto flex items-center justify-between">
         <Link href="/" className="flex-shrink-0 mr-4" aria-label="Siri Chandana Home">
-          <LogoHorizontal className="w-56 md:w-64 lg:w-72 h-auto" />
+          <LogoHorizontal className="w-56 md:w-64 lg:w-72 h-auto -my-1 lg:-my-2" />
         </Link>
 
         {/* Desktop Navigation */}
