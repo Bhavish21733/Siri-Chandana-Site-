@@ -57,7 +57,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaWhatsapp className="w-5 h-5 text-[#25D366] flex-shrink-0" />
-                <a href="https://wa.me/919133432885" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#25D366] font-semibold">WhatsApp Us</a>
+                <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-[#25D366] font-semibold">WhatsApp Us</a>
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@ export function Footer() {
 
         <div className="pt-8 border-t border-[#003761] flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-[#80a4c0] text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Siri Chandana Water Tank Sump & Sintex Cleaning Services. All rights reserved.
+            &copy; {new Date().getFullYear()} Siri Chandana Water Tank Sump & Sintex Cleaning Services. All rights reserved. <span className="block sm:inline sm:ml-2 mt-2 sm:mt-0">Designed by <a href="https://fareworks.in" target="_blank" rel="noopener noreferrer" className="text-brand-aqua hover:text-white transition-colors">Fareworks</a></span>
           </p>
           <div className="flex items-center gap-6 text-sm">
             <Link href="/privacy-policy" className="text-[#80a4c0] hover:text-brand-aqua transition-colors">Privacy Policy</Link>

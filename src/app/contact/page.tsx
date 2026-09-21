@@ -87,7 +87,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">WhatsApp</h4>
-                    <a href="https://wa.me/919133432885" target="_blank" rel="noopener noreferrer" className="text-brand-navy font-semibold hover:text-[#25D366] transition-colors text-lg">Chat with us directly</a>
+                    <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="text-brand-navy font-semibold hover:text-[#25D366] transition-colors text-lg">Chat with us directly</a>
                   </div>
                 </div>
 

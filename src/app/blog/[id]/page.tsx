@@ -54,26 +54,55 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
     .join('');
 
   return (
-    <div className="bg-white min-h-screen pt-16 md:pt-28">
-      {/* HEADER SECTION */}
-      <section data-aos="fade-up" className="border-b border-gray-100 pb-6 pt-0 md:pb-8 md:pt-8">
-        <div className="container-custom max-w-6xl">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-navy mb-6 leading-tight max-w-4xl">
-            {post.title}
-          </h1>
-          <div className="flex flex-wrap items-center gap-4 text-sm font-medium text-gray-500">
-            <span>Published: {post.date}</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Category: {post.category}</span>
-            <span className="hidden sm:inline">•</span>
-            <span>Read Time: 4 mins</span>
+    <div className="bg-white min-h-screen">
+      {/* HERO SECTION */}
+      <section data-aos="fade-up" className="relative pt-32 pb-16 md:pt-40 md:pb-24 bg-brand-navy">
+        <div className="absolute inset-0 z-0">
+          <Image 
+            src={post.image} 
+            alt={post.title} 
+            fill 
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1B3D] via-[#0B1B3D]/80 to-[#0B1B3D]/30"></div>
+          <div className="absolute inset-0 bg-[#0B1B3D]/40"></div>
+        </div>
+
+        <div className="container-custom relative z-10">
+          <div className="max-w-3xl">
+            <span className="block text-brand-aqua font-bold text-sm tracking-widest uppercase mb-4">
+              {post.category} &nbsp;•&nbsp; {post.date} &nbsp;•&nbsp; 4 Min Read
+            </span>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6 leading-[1.15]">
+              {post.title}
+            </h1>
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed line-clamp-2">
+              {post.excerpt}
+            </p>
+
+            <div className="flex flex-row items-center gap-3 sm:gap-4 w-full sm:w-auto mt-8">
+              <Link 
+                href="/contact" 
+                className="flex-1 sm:flex-none text-center bg-[#0ea5e9] text-white font-bold py-3 px-2 sm:px-8 rounded hover:bg-[#0284c7] transition-colors text-sm sm:text-base whitespace-nowrap"
+              >
+                <span className="sm:hidden">Book Inspection</span>
+                <span className="hidden sm:inline">Book an Inspection</span>
+              </Link>
+              <a 
+                href="tel:+919133432885" 
+                className="flex-1 sm:flex-none text-center bg-transparent border-2 border-white/80 text-white font-bold py-2.5 px-2 sm:px-8 rounded hover:bg-white/10 transition-colors text-sm sm:text-base whitespace-nowrap"
+              >
+                Call Now
+              </a>
+            </div>
           </div>
         </div>
       </section>
 
       {/* MAIN CONTENT & SIDEBAR */}
-      <section data-aos="fade-up" className="py-8 md:py-12">
-        <div className="container-custom max-w-6xl">
+      <section data-aos="fade-up" className="py-12 md:py-16">
+        <div className="container-custom max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             
             {/* LEFT COLUMN: ARTICLE */}
@@ -81,9 +110,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
               <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden mb-10 shadow-sm border border-gray-100">
                 <Image src={post.image} alt={post.title} fill className="object-cover" priority sizes="(max-width: 1024px) 100vw, 66vw" />
               </div>
-              
               <article 
-                className="prose max-w-none prose-headings:text-brand-navy prose-a:text-brand-aqua hover:prose-a:text-brand-navy"
+                className="prose max-w-none prose-lg prose-headings:text-brand-navy prose-a:text-brand-aqua hover:prose-a:text-brand-navy"
                 dangerouslySetInnerHTML={{ __html: htmlContent }}
               />
             </div>
@@ -128,7 +156,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ id: s
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                   Send our team a WhatsApp message to get an instant estimate for your water tank size.
                 </p>
-                <a href="https://wa.me/919133432885?text=Hello,%20I%20would%20like%20to%20enquire%20about%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="block text-center bg-[#155280] text-white font-bold py-3 px-4 rounded hover:bg-[#0f3d61] transition-colors text-sm">
+                <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="block text-center bg-[#155280] text-white font-bold py-3 px-4 rounded hover:bg-[#0f3d61] transition-colors text-sm">
                   Chat With Us
                 </a>
               </div>

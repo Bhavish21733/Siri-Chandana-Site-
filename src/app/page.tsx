@@ -20,11 +20,10 @@ export default function HomePage() {
             {/* Left Column: Text */}
             <div className="text-white w-full lg:pr-4">
               <span className="inline-block bg-brand-aqua/20 text-brand-aqua font-bold text-sm tracking-widest uppercase px-3 py-1 rounded-full mb-6 border border-brand-aqua/30">Welcome to Siri Chandana</span>
-              <h1 className="text-4xl md:text-5xl font-extrabold mb-6 leading-[1.2] text-white">
-                Professional Water<br />
-                Tank, Sump &<br />
-                <span className="text-brand-aqua lg:whitespace-nowrap">Sintex Cleaning Services</span><br />
-                in Hyderabad
+              <h1 className="text-4xl md:text-5xl lg:text-[44px] xl:text-5xl font-extrabold mb-6 leading-[1.2] text-white tracking-tight">
+                Professional Water Tank,<br className="hidden md:block" />
+                Sump & <span className="text-brand-aqua">Sintex Cleaning</span><br className="hidden md:block" />
+                Services in Hyderabad
               </h1>
               <p className="text-lg text-gray-200 mb-10 leading-relaxed">
                 Ensure the health and safety of your water supply<br className="hidden sm:block" />
@@ -32,7 +31,7 @@ export default function HomePage() {
                 residential and commercial properties.
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">
-                <a href="https://wa.me/919133432885?text=Hello,%20I%20would%20like%20to%20enquire%20about%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#1C7904] transition-colors">
+                <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#1C7904] transition-colors">
                   <FaWhatsapp className="w-6 h-6" /> WhatsApp Us
                 </a>
                 <a href="tel:+919133432885" className="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-white hover:text-brand-navy transition-colors">
@@ -52,10 +51,10 @@ export default function HomePage() {
                 <div className="absolute inset-x-0 top-24 h-12 bg-blue-50/50 border-y border-blue-100 opacity-60 pointer-events-none"></div>
                 <div className="absolute inset-x-0 top-52 h-12 bg-blue-50/50 border-y border-blue-100 opacity-60 pointer-events-none"></div>
                 
-                <div className="p-10 pt-12 relative z-30">
+                <div className="p-6 md:p-10 pt-8 md:pt-12 relative z-30">
                   <div className="text-center mb-8">
-                    <h3 className="text-3xl font-bold text-brand-navy">Book a Free Inspection</h3>
-                    <p className="text-gray-500 mt-2 text-lg">Get an instant quote for your tank</p>
+                    <h3 className="text-2xl sm:text-3xl font-bold text-brand-navy tracking-tight">Book a Free Inspection</h3>
+                    <p className="text-gray-500 mt-2 text-base md:text-lg">Get an instant quote for your tank</p>
                   </div>
                   
                   <form 
@@ -85,7 +84,7 @@ export default function HomePage() {
                         <option value="Other">Other / Not Sure</option>
                       </select>
                     </div>
-                    <button type="submit" className="w-full bg-brand-aqua text-white font-bold text-lg py-4 rounded-md hover:bg-[#00929e] transition-all mt-2 shadow-md hover:shadow-lg active:scale-[0.98]">
+                    <button type="submit" className="w-full bg-brand-aqua text-white font-bold text-lg py-4 rounded-md hover:bg-[#0284c7] transition-all mt-2 shadow-md hover:shadow-lg active:scale-[0.98]">
                       Get Free Quote
                     </button>
                   </form>
@@ -182,7 +181,7 @@ export default function HomePage() {
                 <div className="p-8 flex flex-col flex-grow">
                   <h3 className="text-xl font-bold text-brand-navy mb-2">{service.title}</h3>
                   <p className="text-gray-600 mb-6 flex-grow">{service.description}</p>
-                  <Link href={`/services#${service.id}`} className="inline-flex items-center gap-2 text-brand-aqua font-bold hover:text-[#00929e] transition-colors mt-auto">
+                  <Link href={`/services#${service.id}`} className="inline-flex items-center gap-2 text-brand-aqua font-bold hover:text-[#0284c7] transition-colors mt-auto">
                     Request Service <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>
@@ -415,17 +414,17 @@ export default function HomePage() {
       </section>
 
       {/* 13. FINAL CTA BANNER */}
-      <section data-aos="fade-up" className="py-20 relative overflow-hidden bg-brand-aqua">
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white to-transparent" />
+      <section data-aos="fade-up" className="py-24 relative overflow-hidden bg-[url('/images/cta_bg.png')] bg-cover bg-center">
+        <div className="absolute inset-0 bg-white/30" />
         <div className="container-custom relative z-10 text-center">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white mb-6">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-brand-navy mb-6 drop-shadow-sm">
             Ready for a Hygienic Water Supply?
           </h2>
-          <p className="text-xl text-white/90 max-w-2xl mx-auto mb-10 font-medium">
+          <p className="text-xl text-brand-navy/90 max-w-2xl mx-auto mb-10 font-bold drop-shadow-sm">
             Reach out to our Vanasthalipuram team for prompt, professional tank cleaning across Hyderabad.
           </p>
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-            <a href="https://wa.me/919133432885?text=Hello,%20I%20would%20like%20to%20enquire%20about%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#1C7904] transition-colors shadow-lg w-full sm:w-auto">
+            <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#1C7904] transition-colors shadow-lg w-full sm:w-auto">
               <FaWhatsapp className="w-6 h-6" /> WhatsApp Us
             </a>
             <a href="tel:+919133432885" className="flex items-center justify-center gap-2 bg-brand-navy text-white px-8 py-4 rounded-md font-bold text-lg hover:bg-[#001d33] transition-colors shadow-lg w-full sm:w-auto">

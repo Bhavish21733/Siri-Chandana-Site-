@@ -22,7 +22,7 @@ const SERVICES_DATA = [
     title: "Commercial Water Tank Cleaning",
     description: "For offices, apartments, and commercial buildings.",
     fullDesc: "Large-scale properties require high-capacity cleaning solutions. We service apartment complexes, office buildings, and commercial facilities with minimal disruption to your daily operations while ensuring maximum water hygiene for occupants.",
-    imageSrc: "/images/image_03_commercial.jpg",
+    imageSrc: "/images/image_03_commercial_new.jpg",
     imageAlt: "Commercial Water Tank Cleaning",
   },
   {
@@ -54,7 +54,7 @@ const SERVICES_DATA = [
     title: "Sump & Sintex Tank Cleaning",
     description: "Cleaning for sumps and Sintex/plastic water tanks.",
     fullDesc: "Plastic and Sintex tanks require specific care to avoid damaging the interior surface while thoroughly removing bacteria and biofilms. We have extensive experience maintaining the classic plastic tanks common across Hyderabad.",
-    imageSrc: "/images/image_07_sintex.jpg",
+    imageSrc: "/images/image_07_sintex_new.jpg",
     imageAlt: "Sump and Sintex Tank Cleaning",
   }
 ];
@@ -66,7 +66,7 @@ export default function ServicesPage() {
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/images/image_03_commercial.jpg" 
+            src="/images/image_03_commercial_new.jpg" 
             alt="Comprehensive Water Tank Cleaning Services" 
             fill 
             className="object-cover"
@@ -147,10 +147,10 @@ export default function ServicesPage() {
                   </ul>
 
                   <a 
-                    href="https://wa.me/919133432885" 
+                    href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 text-brand-aqua font-bold hover:text-[#00929e] transition-colors"
+                    className="inline-flex items-center gap-2 text-brand-aqua font-bold hover:text-[#0284c7] transition-colors"
                   >
                     Book this service on WhatsApp <ArrowRight className="w-5 h-5" />
                   </a>

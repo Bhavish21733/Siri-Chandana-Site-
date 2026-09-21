@@ -5,6 +5,7 @@ import "./globals.css";
 
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import { TankPopup } from "@/components/TankPopup";
 import { MobileCTABar } from "@/components/layout/MobileCTABar";
 import AosInit from "@/components/AosInit";
 
@@ -66,13 +67,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans bg-white text-gray-900 min-h-screen flex flex-col selection:bg-brand-aqua selection:text-white pb-14 md:pb-0">
+      <body suppressHydrationWarning className="font-sans bg-white text-gray-900 min-h-screen flex flex-col selection:bg-brand-aqua selection:text-white pb-14 md:pb-0">
         <AosInit />
         <Header />
         <main className="flex-grow pt-20">
           {children}
         </main>
         <Footer />
+        <TankPopup />
         <MobileCTABar />
       </body>
     </html>

@@ -39,7 +39,7 @@ export function MobileCTABar() {
         </a>
         <div className="w-px bg-gray-200" />
         <a 
-          href="https://wa.me/919133432885" 
+          href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." 
           target="_blank" 
           rel="noopener noreferrer"
           className="flex-1 flex flex-col items-center justify-center py-3 gap-1 bg-[#25D366] text-white hover:bg-[#1C7904] transition-colors"

@@ -37,10 +37,10 @@ export function Header() {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? "bg-white shadow-md py-3" : "bg-white/95 backdrop-blur-sm py-4"
+        isScrolled ? "bg-white shadow-md py-2" : "bg-white/95 backdrop-blur-sm py-3"
       }`}
     >
-      <div className="container-custom flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24 mx-auto flex items-center justify-between">
         <Link href="/" className="flex-shrink-0 mr-4" aria-label="Siri Chandana Home">
           <LogoHorizontal className="w-56 md:w-64 lg:w-72 h-auto" />
         </Link>
@@ -65,7 +65,7 @@ export function Header() {
 
         {/* Desktop CTA */}
         <div className="hidden lg:flex items-center ml-4">
-          <a href="https://wa.me/919133432885" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-md font-bold hover:bg-[#1C7904] transition-colors shadow-sm">
+          <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-[#25D366] text-white px-5 py-2.5 rounded-md font-bold hover:bg-[#1C7904] transition-colors shadow-sm">
             <FaWhatsapp className="w-5 h-5" />
             WhatsApp
           </a>
@@ -108,7 +108,7 @@ export function Header() {
               <Phone className="w-5 h-5" />
               Call +91 91334 32885
             </a>
-            <a href="https://wa.me/919133432885" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-5 py-4 rounded-md font-bold text-lg">
+            <a href="https://wa.me/919133432885?text=Hi%20Siri%20Chandana,%20I%20would%20like%20to%20enquire%20about%20your%20water%20tank%20cleaning%20services." target="_blank" rel="noopener noreferrer" className="flex items-center justify-center gap-2 bg-[#25D366] text-white px-5 py-4 rounded-md font-bold text-lg">
               <FaWhatsapp className="w-5 h-5" />
               WhatsApp Us
             </a>
