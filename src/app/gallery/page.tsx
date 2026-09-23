@@ -70,10 +70,10 @@ export default function GalleryPage() {
               <Image src="/images/image_05_underground.jpg" alt="Underground Water Tank Cleaning" fill className="object-cover" />
             </div>
             <div className="aspect-square bg-slate-200 rounded-xl flex items-center justify-center text-slate-500 border border-slate-300 relative overflow-hidden">
-              <Image src="/images/image_07_sintex.jpg" alt="Sump and Sintex Tank Cleaning" fill className="object-cover" />
+              <Image src="/images/image_07_sintex_new.jpg" alt="Sump and Sintex Tank Cleaning" fill className="object-cover" />
             </div>
             <div className="aspect-square bg-slate-200 rounded-xl flex items-center justify-center text-slate-500 border border-slate-300 relative overflow-hidden">
-              <Image src="/images/image_03_commercial.jpg" alt="Commercial Water Tank Cleaning" fill className="object-cover" />
+              <Image src="/images/image_03_commercial_new.jpg" alt="Commercial Water Tank Cleaning" fill className="object-cover" />
             </div>
 
           </div>

@@ -123,10 +123,12 @@ export function TankPopup() {
                   className="w-full px-4 py-3 rounded-lg bg-white border border-gray-300 text-gray-900 focus:outline-none focus:ring-2 focus:ring-brand-aqua shadow-sm cursor-pointer appearance-none"
                 >
                   <option value="" disabled>Select Tank Type...</option>
-                  <option value="Overhead Tank">Overhead Tank</option>
-                  <option value="Underground Sump">Underground Sump</option>
-                  <option value="Both">Both (Combo)</option>
-                  <option value="Commercial">Commercial/Apartment</option>
+                  <option value="Residential Water Tank Cleaning">Residential Water Tank Cleaning</option>
+                  <option value="Commercial Water Tank Cleaning">Commercial Water Tank Cleaning</option>
+                  <option value="Overhead Tank Cleaning">Overhead Tank Cleaning</option>
+                  <option value="Underground Tank Cleaning">Underground Tank Cleaning</option>
+                  <option value="Industrial Tank Cleaning">Industrial Tank Cleaning</option>
+                  <option value="Sump & Sintex Tank Cleaning">Sump & Sintex Tank Cleaning</option>
                 </select>
               </div>
 
