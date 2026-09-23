@@ -114,7 +114,7 @@ export default function ServicesPage() {
               <div 
                 key={service.id} 
                 id={service.id}
-                className={`flex flex-col ${index % 2 !== 0 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-10 md:gap-16 items-center`}
+                className="flex flex-col md:flex-row gap-10 md:gap-16 items-center"
               >
                 {/* Image Placeholder */}
                 <div className="w-full md:w-1/2">
