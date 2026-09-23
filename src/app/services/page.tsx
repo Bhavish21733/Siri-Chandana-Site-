@@ -108,13 +108,13 @@ export default function ServicesPage() {
       </section>
 
       <section data-aos="fade-up" className="section-padding bg-white">
-        <div className="container-custom max-w-5xl">
+        <div className="container-custom">
           <div className="space-y-20">
             {SERVICES_DATA.map((service, index) => (
               <div 
                 key={service.id} 
                 id={service.id}
-                className="flex flex-col md:flex-row gap-10 md:gap-16 items-center"
+                className={`flex flex-col gap-10 md:gap-16 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}`}
               >
                 {/* Image Placeholder */}
                 <div className="w-full md:w-1/2">
