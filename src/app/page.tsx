@@ -27,8 +27,8 @@ export default function HomePage() {
                 Services in Hyderabad
               </h1>
               <p className="text-lg text-gray-200 mb-10 leading-relaxed">
-                Ensure the health and safety of your water supply<br className="hidden sm:block" />
-                with our expert, hygienic cleaning services for<br className="hidden sm:block" />
+                Ensure the health and safety of your water supply <br className="hidden sm:block" />
+                with our expert, hygienic cleaning services for <br className="hidden sm:block" />
                 residential and commercial properties.
               </p>
               <div className="flex flex-col sm:flex-row flex-wrap gap-4 mb-8">

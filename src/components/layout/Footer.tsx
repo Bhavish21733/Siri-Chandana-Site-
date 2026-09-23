@@ -11,7 +11,9 @@ export function Footer() {
           
           {/* Brand Col */}
           <div className="space-y-6">
-            <LogoHorizontal className="w-64 h-auto" theme="dark" />
+            <Link href="/" aria-label="Siri Chandana Home" className="inline-block">
+              <LogoHorizontal className="w-64 h-auto" theme="dark" />
+            </Link>
             <p className="text-gray-300 text-sm leading-relaxed">
               Professional, hygienic, and reliable water tank cleaning services in Hyderabad. We ensure your family's health starts with clean water storage.
             </p>

@@ -31,11 +31,12 @@ export function HeroForm() {
       <div>
         <select name="service" required className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-aqua text-gray-700 bg-white shadow-sm appearance-none cursor-pointer">
           <option value="">Select a service...</option>
-          <option value="Residential">Residential Tank</option>
-          <option value="Commercial">Commercial Tank</option>
-          <option value="Sintex">Sintex Tank</option>
-          <option value="Underground">Underground Sump</option>
-          <option value="Other">Other / Not Sure</option>
+          <option value="Residential Water Tank Cleaning">Residential Water Tank Cleaning</option>
+          <option value="Commercial Water Tank Cleaning">Commercial Water Tank Cleaning</option>
+          <option value="Overhead Tank Cleaning">Overhead Tank Cleaning</option>
+          <option value="Underground Tank Cleaning">Underground Tank Cleaning</option>
+          <option value="Industrial Tank Cleaning">Industrial Tank Cleaning</option>
+          <option value="Sump & Sintex Tank Cleaning">Sump & Sintex Tank Cleaning</option>
         </select>
       </div>
       <button type="submit" className="w-full bg-brand-aqua text-white font-bold text-lg py-4 rounded-md hover:bg-[#0284c7] transition-all mt-2 shadow-md hover:shadow-lg active:scale-[0.98]">
