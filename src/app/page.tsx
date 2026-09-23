@@ -22,8 +22,8 @@ export default function HomePage() {
             <div className="text-white w-full lg:pr-4">
               <span className="inline-block bg-brand-aqua/20 text-brand-aqua font-bold text-sm tracking-widest uppercase px-3 py-1 rounded-full mb-6 border border-brand-aqua/30">Welcome to Siri Chandana</span>
               <h1 className="text-4xl md:text-5xl lg:text-[44px] xl:text-5xl font-extrabold mb-6 leading-[1.2] text-white tracking-tight">
-                Professional Water Tank,<br className="hidden md:block" />
-                Sump & <span className="text-brand-aqua">Sintex Cleaning</span><br className="hidden md:block" />
+                Professional Water Tank, <br className="hidden md:block" />
+                Sump & <span className="text-brand-aqua">Sintex Cleaning</span> <br className="hidden md:block" />
                 Services in Hyderabad
               </h1>
               <p className="text-lg text-gray-200 mb-10 leading-relaxed">
