@@ -20,16 +20,19 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://sirichandanawater.com'),
+  metadataBase: new URL('https://sirichandanawatertankcleaningservices.com'),
   title: "Professional Water Tank Cleaning in Vanasthalipuram, Hyderabad | Siri Chandana",
   description: "Siri Chandana offers premium water tank, sump, and Sintex cleaning services for residential and commercial properties in Vanasthalipuram, Hyderabad. Call 9133432885.",
+  verification: {
+    google: 'DNa1AS48vYHe-s2U-9idSh4D2qv_o3m7Bq1POx0wC5o',
+  },
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "Siri Chandana Water Tank Sump & Sintex Cleaning Services",
     description: "Professional water tank cleaning services in Vanasthalipuram, Hyderabad.",
-    url: "https://sirichandanawater.com",
+    url: "https://sirichandanawatertankcleaningservices.com",
     siteName: "Siri Chandana",
     locale: "en_IN",
     type: "website",
