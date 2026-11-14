@@ -6,7 +6,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export const metadata: Metadata = {
   title: "Project Gallery | Siri Chandana Water Tank Cleaning",
-  description: "Explore real before-and-after water tank cleaning photos across Hyderabad by Siri Chandana Water Tank Cleaning Services.",
+  description: "Explore authentic before-and-after water tank cleaning photos across Hyderabad by Siri Chandana Water Tank Cleaning Services.",
 };
 
 interface GalleryPhoto {
@@ -92,6 +92,60 @@ const photos: GalleryPhoto[] = [
     badgeColor: "bg-brand-navy text-white",
     description: "Providing prompt, professional water tank cleaning for homes, apartments, and commercial sites.",
   },
+  {
+    id: "photo-09",
+    src: "/images/gallery/gallery_09.jpg",
+    alt: "Tank Bottom Contaminant Inspection Before Cleaning",
+    title: "Pre-Clean Tank Bottom Inspection",
+    badge: "Pre-Inspection",
+    badgeColor: "bg-amber-500 text-white",
+    description: "Detecting accumulated debris, trapped insects, and impurities settling at the base of the tank.",
+  },
+  {
+    id: "photo-10",
+    src: "/images/gallery/gallery_10.jpg",
+    alt: "Sediment and Contaminant Detection",
+    title: "Foreign Particle & Silt Check",
+    badge: "Contamination Check",
+    badgeColor: "bg-rose-600 text-white",
+    description: "Identifying hazardous foreign particles requiring specialized vacuum suction and extraction.",
+  },
+  {
+    id: "photo-11",
+    src: "/images/gallery/gallery_11.jpg",
+    alt: "Internal Rib Cleaning and Surface Descaling",
+    title: "Surface Descaling & Scrubbing",
+    badge: "Deep Scrubbing",
+    badgeColor: "bg-cyan-600 text-white",
+    description: "Deep scrubbing of circular tank grooves and ribs to remove hard-water scale and bio-slime.",
+  },
+  {
+    id: "photo-12",
+    src: "/images/gallery/gallery_12.jpg",
+    alt: "Sludge Removal and Bottom Detailing",
+    title: "Sludge Extraction & Drain Prep",
+    badge: "Sludge Removal",
+    badgeColor: "bg-indigo-600 text-white",
+    description: "Complete extraction of bottom mud and contaminants before final antibacterial sanitization.",
+  },
+  {
+    id: "photo-13",
+    src: "/images/gallery/gallery_13.jpg",
+    alt: "Clean Blue Tank Base After Pressure Washing",
+    title: "High-Pressure Cleaned Base",
+    badge: "Pressure Washed",
+    badgeColor: "bg-teal-600 text-white",
+    description: "Pristine tank bottom following rotary jet washing and complete silt discharge.",
+  },
+  {
+    id: "photo-14",
+    src: "/images/gallery/gallery_14.jpg",
+    alt: "Illuminated Final Quality Inspection with Ring Light",
+    title: "Illuminated Final Quality Check",
+    badge: "Final Inspection",
+    badgeColor: "bg-emerald-600 text-white",
+    description: "Professional ring-light illumination verifying 100% spotless walls, base, and outlet fittings.",
+  },
 ];
 
 export default function GalleryPage() {
@@ -150,7 +204,7 @@ export default function GalleryPage() {
             <div>
               <span className="inline-flex items-center gap-2 bg-brand-aqua/10 text-brand-aqua font-bold text-sm tracking-widest uppercase px-3 py-1 rounded-full mb-3">
                 <Camera className="w-4 h-4" />
-                Photo Proof
+                Photo Proof ({photos.length} Project Photos)
               </span>
               <h2 className="text-3xl md:text-4xl font-extrabold text-brand-navy">
                 On-Site Project Photos
@@ -161,7 +215,7 @@ export default function GalleryPage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
             {photos.map((photo) => (
               <div
                 key={photo.id}
@@ -173,7 +227,7 @@ export default function GalleryPage() {
                     alt={photo.alt}
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                   />
                   <span
                     className={`absolute top-3 left-3 px-3 py-1 rounded-full text-xs font-semibold shadow-md ${photo.badgeColor}`}
